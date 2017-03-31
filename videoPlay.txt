@@ -9,14 +9,22 @@ onCreate() {
 }
 
 playVideo() {
-
   video = new Video(mfile);
   video.play();
-  //todo: onVideoPlay()
-  //progress = mfile.getStatus.getProgress();
-  //String progressRate = "" + progress + "/" + length;
-  //video.updateProgress(progressRate);
+  video.setOnVideoPlay() {
+    onPlay(int progress) {
+      this.progress = progress;
+      String progressRate = "" + progress + "/" + length;
+      video.updateProgress(progressRate);
+    }
 
+    onPause() {
+      pauseVideo()
+    }
+    onStop() {
+      stopVideo()
+    }
+  }
 }
 
 pauseVideo() {
