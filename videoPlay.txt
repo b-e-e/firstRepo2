@@ -1,0 +1,31 @@
+int progresss = 0;
+int length = 0;
+MediaFile mfile;
+
+
+onCreate() {
+  countVideoLength();
+  playVideo();
+}
+
+playVideo() {
+
+  video = new Video(mfile);
+  video.play();
+  //todo: onVideoPlay()
+  //progress = mfile.getStatus.getProgress();
+  //String progressRate = "" + progress + "/" + length;
+  //video.updateProgress(progressRate);
+
+}
+
+pauseVideo() {
+}
+
+stopVideo() {
+}
+
+countVideoLength() {
+  mfile = new File("/.../....mp3");
+  length = mfile.getLength();
+}
