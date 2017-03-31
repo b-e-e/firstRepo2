@@ -12,7 +12,14 @@ playVideo() {
   video = new Video(mfile);
   video.play();
   video.setOnVideoPlay() {
-    onPlay(int progress) {
+
+    onPlay(VideoView view) {
+      view.getPlayButton.setAnimation(R.anim.play);
+      view.getPauseButton.setAnimation(R.anim.pause);
+      view.getStopButton.setAnimation(R.anim.stop);
+    }
+
+    onProgress(int progress) {
       this.progress = progress;
       String progressRate = "" + progress + "/" + length;
       video.updateProgress(progressRate);
