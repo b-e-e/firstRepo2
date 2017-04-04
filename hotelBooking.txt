@@ -21,4 +21,6 @@ initView() {
 //john
 private void setNoDataView() {
 	btn.setVisibility(GONE);
+	snackbar.("No data").show;
+	
 }
