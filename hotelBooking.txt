@@ -11,5 +11,14 @@ initView() {
 	findView(btn).setOnclickListener(){
 
 	}
+
+	if (getIntent == null) {
+		setNoDataView();
+	}
  
+}
+
+//john
+private void setNoDataView() {
+	btn.setVisibility(GONE);
 }
