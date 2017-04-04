@@ -9,7 +9,10 @@ onCreate() {
 initView() {
 
 	findView(btn).setOnclickListener(){
-		showMessage("sending content");
+		//mary
+		send(btn.getText());
+		//john
+		showMessage("send
 	}
 
 	if (getIntent == null) {
@@ -23,6 +26,10 @@ private void setNoDataView() {
 	btn.setVisibility(GONE);
 	snackbar.("No data").show;
 	
+}
+
+//mary
+private void send(String msg) {
 }
 
 //john
