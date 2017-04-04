@@ -1,0 +1,15 @@
+int progresss = 0;
+int length = 0;
+
+
+onCreate() {
+  initView();
+}
+
+initView() {
+
+	findView(btn).setOnclickListener(){
+
+	}
+ 
+}
