@@ -1,0 +1,46 @@
+int progresss = 0;
+int length = 0;
+MediaFile mfile;
+
+
+onCreate() {
+  countVideoLength();
+  playVideo();
+}
+
+playVideo() {
+  video = new Video(mfile);
+  video.play();
+  video.setOnVideoPlay() {
+
+    onPlay(VideoView view) {
+      view.getPlayButton.setAnimation(R.anim.play);
+      view.getPauseButton.setAnimation(R.anim.pause);
+      view.getStopButton.setAnimation(R.anim.stop);
+    }
+
+    onProgress(int progress) {
+      this.progress = progress;
+      String progressRate = "" + progress + "/" + length;
+      video.updateProgress(progressRate);
+    }
+
+    onPause() {
+      pauseVideo()
+    }
+    onStop() {
+      stopVideo()
+    }
+  }
+}
+
+pauseVideo() {
+}
+
+stopVideo() {
+}
+
+countVideoLength() {
+  mfile = new File("/.../....mp3");
+  length = mfile.getLength();
+}
